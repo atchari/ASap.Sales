@@ -1,0 +1,17 @@
+import { ASSET_AVATARS } from "@/_utilities/paths";
+import { Avatar, Dropdown } from "antd";
+import { UserCardAction } from "./UserCardAction";
+
+export const UserPopover = () => {
+  return (
+    <Dropdown
+      trigger={["click"]}
+      placement="bottomRight"
+      dropdownRender={() => <UserCardAction />}
+    >
+      <div className="cursor-pointer ml-3">
+        <Avatar src={`${ASSET_AVATARS}/avatar9.jpg`} size={40} />
+      </div>
+    </Dropdown>
+  );
+};

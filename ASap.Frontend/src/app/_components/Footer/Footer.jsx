@@ -1,0 +1,22 @@
+import { Button, Typography } from "antd";
+import { BUY_NOW_PRICE } from "../../_utilities/constants";
+import { currentYear } from "../../_utilities/data";
+
+const Footer = () => {
+  return (
+    <div className="flex justify-between items-center">
+      <Typography.Text>{`Copyright Company Name © ${currentYear}`}</Typography.Text>
+      <div className="flex items-center">
+        <Typography.Text className="mr-4">{`${BUY_NOW_PRICE} Only`}</Typography.Text>
+        <Button
+          type="primary"
+          target="_blank"
+          href="https://codecanyon.net/checkout/from_item/22719616?license=regular&size=source&support=bundle_6month"
+        >
+          {"Buy Now"}
+        </Button>
+      </div>
+    </div>
+  );
+};
+export { Footer };

@@ -1,0 +1,13 @@
+export const esTranslation = {
+  sidebar: {
+    menuGroup: {
+      main: "Muestra",
+    },
+    menu: {
+      dashboards: "Página de muestra",
+    },
+    menuItem: {
+      crypto: "Artículo de muestra",
+    },
+  },
+};

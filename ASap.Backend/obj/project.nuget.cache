@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "y0Da4ZQjO8E=",
+  "success": true,
+  "projectFilePath": "D:\\NW\\PL\\SAPb1\\A-SAP\\Sales\\ASap.Backend\\MyWebApiProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\atchari.wa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0\\microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "C:\\Users\\atchari.wa\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
