@@ -1,4 +1,5 @@
 import { useAuth } from "@/_components/AuthProvider/hooks";
+import { useAuthStore } from "@/_stores/authStore";
 import { ASSET_AVATARS } from "@/_utilities/paths";
 import {
   EditOutlined,
@@ -26,14 +27,16 @@ const items = [
 
 export const UserCardAction = () => {
   const { logout } = useAuth();
+  const { user } = useAuthStore();
   const navigate = useNavigate();
 
   const handlClick = async (opt) => {
     if (opt.key === "logout") {
       await logout();
-      return navigate("/auth/login-1");
+      // No need to navigate, Keycloak will redirect
     }
   };
+
   return (
     <Card
       classNames={{ body: "p-0" }}
@@ -44,10 +47,10 @@ export const UserCardAction = () => {
         <Avatar src={`${ASSET_AVATARS}/avatar9.jpg`} size={60} />
         <div>
           <Typography.Title level={5} className="mb-1">
-            Harmayni Croft
+            {user?.name || user?.username || "User"}
           </Typography.Title>
           <Typography.Text type="secondary">
-            harmaynicroft@example.com
+            {user?.email || "No email"}
           </Typography.Text>
         </div>
       </div>

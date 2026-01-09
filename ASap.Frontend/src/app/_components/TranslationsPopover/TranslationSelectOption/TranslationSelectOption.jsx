@@ -11,8 +11,8 @@ const languageOptions = locales.map((localeItem) => {
       <Space>
         <ReactCountryFlag
           countryCode={localeItem.flag}
-          svg
-          style={{ width: 20, height: "auto" }}
+          style={{ fontSize: '1.2em', lineHeight: '1em' }}
+          aria-label={localeItem.label}
         />
         {localeItem.label}
       </Space>

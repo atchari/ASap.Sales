@@ -23,8 +23,11 @@ export const TranslationsPopover = () => {
           icon={
             <ReactCountryFlag
               countryCode={activeLocale?.flag}
-              svg
-              className="text-xl"
+              style={{
+                fontSize: '1.5em',
+                lineHeight: '1em',
+              }}
+              aria-label={activeLocale?.label}
             />
           }
           className="[&_.ant-btn-icon]:inline-flex"

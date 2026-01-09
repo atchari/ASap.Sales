@@ -1,0 +1,55 @@
+ในไฟล์ ASap.Frontend\.env  มีสิ่งที่จำเป็นในการเชื่อมต่อ authen ผ่าน keycloak แล้ว
+VITE_KEYCLOAK_URL
+VITE_KEYCLOAK_REALM
+VITE_KEYCLOAK_CLIENT_ID
+
+
+1.ช่วยทำ frontend react นี้ ให้ทำการ login ด้วย keycloak
+2.ลง zustand เพื่อให้เก็บ global state แล้วถ้าจำเป็น
+3.ให้ทำการ reload token เรื่อยๆด้วย กันเด้งออกเองขณะใช้งาน
+4.มี folder ASap.Frontend\src\app\_stores ให้เอาไว้เก็บ store ของ zustand นะ
+5.implement การ logout ที่ปุ่ม logout ในรูปด้วย
+
+
+---------------------------
+
+โปรแกรมไม่ไป keycloak แต่เด้งมาหน้า login ของ theme demo แทน
+
+---------------------------
+
+
+ขึ้น loading ไม่หยุด
+
+react-dom-client.development.js:24594 Download the React DevTools for a better development experience: https://react.dev/link/react-devtools
+keycloakService.js:69  Failed to initialize Keycloak: Error: A 'Keycloak' instance can only be initialized once.
+    at Keycloak.init (keycloak.js:177:13)
+    at initKeycloak (keycloakService.js:25:42)
+    at initAuth (AuthProvider.jsx:24:51)
+    at AuthProvider.jsx:45:5
+    at react-stack-bottom-frame (react-dom-client.development.js:22509:20)
+    at runWithFiberInDEV (react-dom-client.development.js:543:16)
+    at commitHookEffectListMount (react-dom-client.development.js:10758:29)
+    at commitHookPassiveMountEffects (react-dom-client.development.js:10878:11)
+    at reconnectPassiveEffects (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseReconnectPassiveEffects (react-dom-client.development.js:12774:9)
+initKeycloak @ keycloakService.js:69
+AuthProvider.jsx:38  Failed to initialize authentication: Error: A 'Keycloak' instance can only be initialized once.
+    at Keycloak.init (keycloak.js:177:13)
+    at initKeycloak (keycloakService.js:25:42)
+    at initAuth (AuthProvider.jsx:24:51)
+    at AuthProvider.jsx:45:5
+    at react-stack-bottom-frame (react-dom-client.development.js:22509:20)
+    at runWithFiberInDEV (react-dom-client.development.js:543:16)
+    at commitHookEffectListMount (react-dom-client.development.js:10758:29)
+    at commitHookPassiveMountEffects (react-dom-client.development.js:10878:11)
+    at reconnectPassiveEffects (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseReconnectPassiveEffects (react-dom-client.development.js:12774:9)
+initAuth @ AuthProvider.jsx:38
+keycloakService.js:32 Keycloak initialized. Authenticated: true
+keycloakService.js:51 Token refresh successful
+keycloakService.js:82 Token refreshed
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
