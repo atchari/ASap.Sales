@@ -13,6 +13,11 @@ export function WieldyLayoutHeader({
   const { headerTheme } = useHeaderTheme();
   const { headerOptions } = useWieldyLayoutHeader();
 
+  const headerBg =
+    headerTheme?.token?.colorBgHeader ?? headerTheme?.components?.Layout?.headerBg;
+  const headerColor =
+    headerTheme?.token?.colorTextHeader ?? headerTheme?.components?.Layout?.headerColor;
+
   const headerStyle = headerOptions?.fixed
     ? {
         ...style,
@@ -22,9 +27,13 @@ export function WieldyLayoutHeader({
         width: "100%",
         display: "flex",
         alignItems: "center",
+        backgroundColor: headerBg,
+        color: headerColor,
       }
     : {
         ...style,
+        backgroundColor: headerBg,
+        color: headerColor,
       };
   return (
     <ConfigProvider theme={headerTheme}>

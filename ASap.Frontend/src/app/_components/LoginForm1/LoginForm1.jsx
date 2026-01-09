@@ -152,7 +152,7 @@ export const LoginForm1 = () => {
           classNames={{
             body: "p-8 text-white max-w-[700px] mx-auto flex flex-col justify-between h-full",
           }}
-          bordered={false}
+          variant="borderless"
         >
           <div className="mb-5">
             <Typography.Title className="text-white text-3xl lg:text-4xl font-light">

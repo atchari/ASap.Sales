@@ -9,7 +9,7 @@ export const TranslationsPopover = () => {
     <Dropdown
       trigger={["click"]}
       placement="bottomRight"
-      dropdownRender={() => <TranslationSelectOption />}
+      popupRender={() => <TranslationSelectOption />}
     >
       <div
         className="cursor-pointer

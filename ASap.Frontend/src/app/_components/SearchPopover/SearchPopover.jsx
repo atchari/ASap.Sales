@@ -6,7 +6,7 @@ export const SearchPopover = () => {
     <Dropdown
       trigger={["click"]}
       placement="bottom"
-      dropdownRender={() => <SearchInput />}
+      popupRender={() => <SearchInput />}
     >
       <Button
         type="text"

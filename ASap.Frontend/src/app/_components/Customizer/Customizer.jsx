@@ -26,7 +26,7 @@ const Customizer = () => {
     <>
       <Drawer
         title="Customizer"
-        width={350}
+        size={350}
         onClose={closeCustomizer}
         open={customizerVisibility}
         placement={direction === "rtl" ? "left" : "right"}

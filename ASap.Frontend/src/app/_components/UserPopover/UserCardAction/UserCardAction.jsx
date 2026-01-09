@@ -38,7 +38,7 @@ export const UserCardAction = () => {
     <Card
       classNames={{ body: "p-0" }}
       className="w-[250px] overflow-hidden"
-      bordered={false}
+      variant="borderless"
     >
       <div className="flex flex-col items-center text-center p-4">
         <Avatar src={`${ASSET_AVATARS}/avatar9.jpg`} size={60} />
@@ -55,7 +55,6 @@ export const UserCardAction = () => {
       <Menu
         defaultSelectedKeys={["1"]}
         defaultOpenKeys={["sub1"]}
-        mode="inline"
         items={items}
         className="shadow-none"
         onClick={(opt) => handlClick(opt)}

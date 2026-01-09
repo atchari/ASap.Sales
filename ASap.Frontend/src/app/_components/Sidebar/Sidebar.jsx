@@ -16,13 +16,13 @@ const Sidebar = () => {
   const menuItems = useMenus();
   return (
     <div className="relative h-full">
-      <div className="flex items-center px-5 py-3 bg-black/30 backdrop-blur-xl sticky top-0 z-10 min-h-[72px]">
+      <div className="flex items-center px-5 py-3 bg-white sticky top-0 z-10 min-h-[72px]">
         <div className="flex-1">
           <Link to="/">
             {sidebarOptions.collapsed ? (
-              <img src="/assets/images/logo-symbol.png" alt="Logo" />
+              <img src="/assets/images/logo_iconic.svg" alt="Logo" className="h-9" />
             ) : (
-              <img src="/assets/images/logo-white.png" alt="Logo" />
+              <img src="/assets/images/logo_a_sap.svg" alt="Logo" className="h-9" />
             )}
           </Link>
         </div>

@@ -5,8 +5,8 @@ import { currentYear } from "../../_utilities/data";
 const Footer1 = () => {
   return (
     <div className="flex justify-between items-center mx-auto px-8 max-w-[1400px]">
-      <Typography.Text>{`Copyright Company Name © ${currentYear}`}</Typography.Text>
-      <div className="flex items-center">
+      <Typography.Text>{`ALUMET COMPANY LIMITED © ${currentYear}`}</Typography.Text>
+      {/* <div className="flex items-center">
         <Typography.Text className="mr-4">{`${BUY_NOW_PRICE} Only`}</Typography.Text>
         <Button
           type="primary"
@@ -14,8 +14,8 @@ const Footer1 = () => {
           href="https://codecanyon.net/checkout/from_item/22719616?license=regular&size=source&support=bundle_6month"
         >
           {"Buy Now"}
-        </Button>
-      </div>
+        </Button> 
+      </div>*/}
     </div>
   );
 };

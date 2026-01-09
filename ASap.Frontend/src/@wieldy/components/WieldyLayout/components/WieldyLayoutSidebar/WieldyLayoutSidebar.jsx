@@ -18,6 +18,11 @@ export function WieldyLayoutSidebar({
   const { sidebarOptions, setSidebarOptions } = useWieldyLayoutSidebar();
   const screens = useBreakpoint();
 
+  const siderBg =
+    sidebarTheme?.components?.Layout?.siderBg ??
+    sidebarTheme?.components?.Menu?.itemBg ??
+    sidebarTheme?.token?.colorBgContainer;
+
   const siderStyle = sidebarOptions?.fixed
     ? {
         height: "100vh",
@@ -47,7 +52,7 @@ export function WieldyLayoutSidebar({
     <ConfigProvider theme={sidebarTheme}>
       {!isDrawer ? (
         <Sider
-          style={{ ...style, ...siderStyle }}
+          style={{ ...style, ...siderStyle, backgroundColor: siderBg }}
           onCollapse={(collapsed) => setSidebarOptions({ collapsed })}
           {...restProps}
         >
@@ -60,7 +65,9 @@ export function WieldyLayoutSidebar({
           closeIcon={null}
           classNames={{ body: "p-0" }}
           footer={null}
-          width={sidebarOptions?.width}
+          size={sidebarOptions?.width}
+          style={{ backgroundColor: siderBg }}
+          styles={{ body: { backgroundColor: siderBg } }}
           onClose={() => setSidebarOptions({ collapsed: true })}
           destroyOnClose={true}
         >

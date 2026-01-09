@@ -8,7 +8,7 @@ const CustomizerCard = (props) => {
       title={title}
       classNames={{ header: "text-base font-medium" }}
       {...restProps}
-      bordered={false}
+      variant="borderless"
     >
       {children}
     </Card>

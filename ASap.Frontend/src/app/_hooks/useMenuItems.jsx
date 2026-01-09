@@ -27,6 +27,7 @@ export const useMenuItems = () => {
               key: "crypto",
               icon: <BiBitcoin />,
             },
+            
           ],
         },
       ],

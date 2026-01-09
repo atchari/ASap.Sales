@@ -9,7 +9,7 @@ export function MessagesPopover() {
     <Dropdown
       trigger={["click"]}
       placement={screens?.xs ? "bottom" : "bottomRight"}
-      dropdownRender={() => <MessagesCard />}
+      popupRender={() => <MessagesCard />}
     >
       <Button
         type="text"

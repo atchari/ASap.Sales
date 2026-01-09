@@ -25,6 +25,16 @@ export function useMenus() {
               key: "crypto",
               icon: <BiBitcoin />,
             },
+
+            {
+              label: (
+                <Link to={"/dashboards/crypto"}>
+                  xxxx
+                </Link>
+              ),
+              key: "xxxx",
+              icon: <BiBitcoin />,
+            },
           ],
         },
       ],

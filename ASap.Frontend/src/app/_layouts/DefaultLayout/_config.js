@@ -22,7 +22,7 @@ export const layoutConfig = {
       breakpoint: "xl",
     },
     footer: {
-      fixed: true,
+      fixed: false,
     },
   },
 };

@@ -21,7 +21,7 @@ export function DefaultLayout({ children }) {
         {location.pathname === "/" && <Navigate to={"/dashboards/crypto"} />}
         {children}
         {/* <Outlet /> */}
-        <Customizer />
+        {/* <Customizer /> */}
       </WieldyContainer>
     </WieldyLayout>
   );

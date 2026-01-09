@@ -1,0 +1,44 @@
+import { mainTheme } from "./main";
+
+export const headerTheme = {
+  ...mainTheme,
+  token: {
+    ...mainTheme.token,
+    // Ant Design 6 uses these global tokens for Layout.Header background/text
+    colorBgHeader: "#FF8300",
+    colorTextHeader: "#FFF",
+  },
+  components: {
+    ...mainTheme.components,
+    Layout: {
+      ...mainTheme.components?.Layout,
+      headerBg: "#FF8300",
+      headerColor: "#FFF",
+    },
+    Menu: {
+      itemColor: "#545454",
+      itemHoverColor: "#FCB53B",
+      itemSelectedColor: "#FCB53B",
+      itemBg: "#444342",
+      horizontalItemSelectedColor: "#FCB53B",
+      darkItemColor: "#FFF",
+      darkItemHoverColor: "#FCB53B",
+      darkItemSelectedColor: "#FCB53B",
+      darkItemBg: "#444342",
+      darkItemSelectedBg: "#444342",
+    },
+    Button: {
+      colorText: "#FFF",
+    },
+    Dropdown: {
+      colorText: "#545454",
+    },
+    Select: {
+      controlOutline: "transparent",
+    },
+    Input: {
+      colorTextPlaceholder: "#FFF",
+      colorIcon: "#FFF",
+    },
+  },
+};

@@ -9,7 +9,7 @@ export function NotificationsPopover() {
     <Dropdown
       trigger={["click"]}
       placement={screens?.xs ? "bottom" : "bottomRight"}
-      dropdownRender={() => <NotificationsCard />}
+      popupRender={() => <NotificationsCard />}
     >
       <Button
         type="text"

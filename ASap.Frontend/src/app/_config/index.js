@@ -1,5 +1,5 @@
-import { theme1 } from "@/_themes/theme1";
+import { theme11 } from "@/_themes/theme11";
 
 export const config = {
-  defaultTheme: theme1,
+  defaultTheme: theme11,
 };

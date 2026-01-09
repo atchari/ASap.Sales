@@ -7,7 +7,7 @@ export const UserPopover = () => {
     <Dropdown
       trigger={["click"]}
       placement="bottomRight"
-      dropdownRender={() => <UserCardAction />}
+      popupRender={() => <UserCardAction />}
     >
       <div className="cursor-pointer ml-3">
         <Avatar src={`${ASSET_AVATARS}/avatar9.jpg`} size={40} />
